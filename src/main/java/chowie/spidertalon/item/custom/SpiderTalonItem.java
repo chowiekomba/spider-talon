@@ -16,6 +16,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TridentItem;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 public class SpiderTalonItem extends TridentItem {
     public SpiderTalonItem(Properties properties) {
@@ -54,12 +55,12 @@ public class SpiderTalonItem extends TridentItem {
 
     @Override
     public boolean hurtEnemy(ItemStack itemStack, LivingEntity livingEntity, LivingEntity livingEntity2) {
-        livingEntity.addEffect(new MobEffectInstance(MobEffects.WITHER, 3 * 20));
+        livingEntity.addEffect(new MobEffectInstance(MobEffects.WITHER, 6 * 20));
         return super.hurtEnemy(itemStack, livingEntity, livingEntity2);
     }
 
     @Override
-    public Projectile asProjectile(Level level, Position position, ItemStack itemStack, Direction direction) {
+    public @NotNull Projectile asProjectile(Level level, Position position, ItemStack itemStack, Direction direction) {
         SpiderTalonEntity thrownTrident = new SpiderTalonEntity(level, position.x(), position.y(), position.z(), itemStack.copyWithCount(1));
         thrownTrident.pickup = AbstractArrow.Pickup.ALLOWED;
         return thrownTrident;
