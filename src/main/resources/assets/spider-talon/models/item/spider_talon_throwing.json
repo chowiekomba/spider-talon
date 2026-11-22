@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "spider-talon:item/spider_talon"
+  },
+  "display": {
+    "firstperson_righthand": {
+      "translation": [5.13, 0.2, -4.13],
+      "rotation": [-20, -90, 50]
+    },
+    "thirdperson_righthand": {
+      "rotation": [0, 90, 220]
+    }
+  }
+}

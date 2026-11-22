@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "minecraft:bone"
+    },
+    "E": {
+      "item": "minecraft:spider_eye"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "N": {
+      "item": "minecraft:iron_nugget"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " I ",
+    "SBS",
+    "NEN"
+  ],
+  "result": {
+    "count": 1,
+    "id": "spider-talon:spider_talon"
+  }
+}

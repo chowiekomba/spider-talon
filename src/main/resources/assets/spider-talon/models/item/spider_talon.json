@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "spider-talon:item/spider_talon"
+  },
+  "overrides": [
+        {
+            "predicate": {
+                "throwing": 1
+            },
+            "model": "spider-talon:item/spider_talon_throwing"
+        }
+    ]
+}

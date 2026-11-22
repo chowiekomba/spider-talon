@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "spider-talon",
+	"version": "${version}",
+	"name": "spider talon",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/spider-talon/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"chowie.spidertalon.SpiderTalon"
+		],
+		"fabric-datagen": [
+			"chowie.spidertalon.SpiderTalonDataGenerator"
+		]
+	},
+	"mixins": [
+		"spider-talon.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"accessWidener": "spider-talon.accesswidener"
+}
