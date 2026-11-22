@@ -3,15 +3,16 @@
 	"id": "spider-talon",
 	"version": "${version}",
 	"name": "spider talon",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This mod adds a powerful talon to the game",
 	"authors": [
-		"Me!"
+		"Chowiekomba",
+		"arjaythegoober"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/chowiekomba/spider-talon",
+		"sources": "https://github.com/chowiekomba/spider-talon/tree/master/src"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/spider-talon/icon.png",
 	"environment": "*",
 	"entrypoints": {
