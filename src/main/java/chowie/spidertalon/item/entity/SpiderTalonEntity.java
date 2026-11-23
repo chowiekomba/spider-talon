@@ -72,7 +72,7 @@ public class SpiderTalonEntity extends ThrownTrident {
             if (entity instanceof LivingEntity livingEntity) {
                 this.doKnockback(livingEntity, damageSource);
                 this.doPostHurtEffects(livingEntity);
-                livingEntity.addEffect(new MobEffectInstance(MobEffects.WITHER, 6 * 20));
+                livingEntity.addEffect(new MobEffectInstance(MobEffects.WITHER, 10 * 20));
             }
         }
 

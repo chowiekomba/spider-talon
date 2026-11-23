@@ -55,7 +55,7 @@ public class SpiderTalonItem extends TridentItem {
 
     @Override
     public boolean hurtEnemy(ItemStack itemStack, LivingEntity livingEntity, LivingEntity livingEntity2) {
-        livingEntity.addEffect(new MobEffectInstance(MobEffects.WITHER, 6 * 20));
+        livingEntity.addEffect(new MobEffectInstance(MobEffects.WITHER, 10 * 20));
         return super.hurtEnemy(itemStack, livingEntity, livingEntity2);
     }
 
